@@ -69,30 +69,30 @@ The files contain the following files:
 * product page
 * cart/checkout
 
-The images for products are stored in the images folder. Replace these with your product images and make the necssary changes to the file names on the index, catalog and corresponding product pages.
+The images for products are stored in the images folder. Replace these with your product images and make the necssary changes to the file names on the index, catalog and corresponding product pages. Images in the "readmeImg" file are for the purpose of this README doc.
 
-![landing page](/assets/readmeImg/landing.jpeg)
+![landing page](/readmeImg/landing.jpeg)
 The catalog page can be accessed from the nav bar and dedicated "shop" button in the header
 
-![catalog page](/assets/readmeImg/catalog.jpeg)
+![catalog page](/readmeImg/catalog.jpeg)
 The catalog has "quick add" links from each product directly to the cart, or products can be added from a dropdown menu. The "Show More" button takes you to the individual product page.
 
-![product page](/assets/readmeImg/productPage.jpeg)
+![product page](/readmeImg/productPage.jpeg)
 The product page contains additional product information and an "Add to Cart" button
 
-![totals updated alert](/assets/readmeImg/totalUpdate.jpeg)
+![totals updated alert](/readmeImg/totalUpdate.jpeg)
 Each time an item is added to the cart, an alert will populate with the new cart total
 
-![cart page](/assets/readmeImg/cartItems.jpeg)
+![cart page](/readmeImg/cartItems.jpeg)
 One you navigate to the cart, the items added will display with the vat and a subtotal
 
-![coupon section](/assets/readmeImg/couponAdded.jpeg)
+![coupon section](/readmeImg/couponAdded.jpeg)
 The coupon value can be amended or set to '0' . If active, an alert will advise of the discount amount and the final total will amend to reflect the new value
 
-![shipping section](/assets/readmeImg/shipping.jpeg)
+![shipping section](/readmeImg/shipping.jpeg)
 The shipping section will only populate if "Courier" is selected. The shipping method will update the final total. 
 
-![sucess alert](/assets/readmeImg/sucessGenerate.jpeg)
+![sucess alert](/readmeImg/sucessGenerate.jpeg)
 The submit button will generate an alert with a "Sucess" message and Invoice Number
 
 ## Credits
