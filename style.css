@@ -1,0 +1,330 @@
+body {
+    display: grid;
+    padding: 5px;
+    margin: 10px;
+    background-color: #fcd8d8;
+    align-items: center;
+    font-family: Geneva;
+}
+
+hr {
+    border: 1px solid #86aba4;
+}
+
+.navbar {
+    Background-color: #CDC0BB;
+}
+
+#headerSec {
+    background-image: url('images/product(6).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    /* height: 300px; */
+}
+
+/* 3 font styles, 3 different colouring effects */
+h1 {
+    color: #1b382c;
+    font-family: helvetica;
+    font-style: oblique;
+    text-align: center;
+}
+
+h2 {
+    font-family: Cambria;
+    color: #86aba4;
+    font-style: italic;
+}
+
+h3 {
+    font-style: normal;
+    color: #65a38a;
+}
+
+/* Animate all images to expand when hovered over/clicked on*/
+.imgHover {
+    transform: scale(1.25);
+}
+
+.img-thumbnail {
+    max-height: 400px;
+    max-width: auto;
+}
+
+/* All images & Buttons to have padding */
+/*Animate background colours to change between variants of colours  */
+#mainBody {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #f4dfdf;
+
+}
+
+@keyframes changeCat {
+    0% {
+        background-color: #bbc2ddc2;
+    }
+
+    30% {
+        background-color: #b7d8cb;
+    }
+
+    75% {
+        background-color: rgb(233, 193, 254);
+    }
+}
+
+/* Fake Social Media */
+table {
+    table-layout: fixed;
+    margin: auto;
+}
+
+.tableRow {
+    max-width: 400px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: whitesmoke;
+}
+
+td {
+    background-color: #ebc1c1;
+    border-color: #cbc0bb;
+    overflow: hidden;
+}
+
+.tableRow img {
+    width: 100px;
+    height: 100px;
+    /* overflow: hidden; */
+}
+
+#fakeIG {
+    background-color: #ebc1c1;
+}
+
+.fakeIG {
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+#followText {
+    text-align: center;
+    font-family: Cambria;
+    font-size: x-large;
+    background-color: #cbc0bb;
+}
+
+#contactForm {
+    display: flex;
+    float: left;
+    font-family: georgia;
+    font-size: large;
+}
+
+#footer {
+    height: 100%;
+    max-height: 12em;
+    padding-top: 10px;
+    text-align: center;
+    border-style: groove;
+    border-radius: 7px;
+    background-color: #cbc0bb;
+}
+
+#footer ul {
+    list-style: none;
+    float: left;
+    width: 30%;
+    padding: 3px;
+}
+
+#footer img {
+    margin: auto;
+    padding: 2px;
+    border-style: groove;
+    border-width: 3px;
+}
+
+/* Catalogue Box area */
+#productBox {
+    background-color: #e5eafdc2;
+    animation-name: changeCat;
+    animation-duration: 5s;
+}
+
+/* Catalog Page */
+#itemText {
+    color: rgb(77, 86, 96);
+    font-size: larger;
+}
+
+.moreData {
+    display: none;
+}
+
+.shipInfo {
+    font-family: Helvetica;
+    font-size: large;
+    font-style: normal;
+}
+
+/* Floating Box - About Page */
+.aboutJojo {
+    display: flex;
+    border-width: 2px;
+    border-style: groove;
+    text-align: center;
+
+}
+
+.about {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    .about {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* Color Filter apply to Image */
+.aboutPic {
+    filter: grayscale(75%);
+    padding: 5px;
+    border-color: #17231e;
+    border-width: 2px;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 170px;
+    height: 100%;
+    max-height: 170px;
+}
+
+/* Team Cards */
+#teamCards {
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    background-color: #b7d8cb94;
+    padding: 3px;
+
+}
+
+#profilePic1,
+#profilePic2,
+#profilePic3 {
+    padding: 3px;
+    border-style: groove;
+    border-width: 3px;
+    border: #65a38a;
+
+}
+
+#profilePic1 {
+    filter: sepia(80%);
+
+}
+
+#profilePic2 {
+    filter: grayscale(90%);
+}
+
+#profilePic3 {
+    filter: invert(10%);
+}
+
+.btn {
+    background-color: #b7d8cb;
+    color: slategray;
+    padding: 5px;
+    margin: 2px;
+    border-color: #8aa49a;
+    color: #17231e;
+    border-width: 1px;
+}
+
+
+/* Cart Page */
+#cartHead {
+    margin: auto;
+    column-gap: 2px;
+}
+
+#allCosts p,
+#cartHead p {
+    font-size: large;
+    font-family: Georgia;
+    color: #65a38a;
+    border-width: 1px;
+    border-style: groove;
+    padding: 5px;
+}
+
+#totIncl {
+    padding: 5px;
+    font-size: 18px;
+    font-family: Georgia;
+    color: #65a38a;
+    border-width: 1px;
+    border-style: groove;
+
+}
+
+#lineItem {
+    display: flex;
+    float: left;
+    padding: 20px;
+    text-align: justify;
+    font-size: larger;
+    text-indent: 40px;
+    color: #65a38a;
+
+}
+
+/* Pre-Shipping Totals Section */
+#preShipping p {
+    font-size: large;
+    font-family: Georgia;
+    font-style: italic;
+
+}
+
+/* DropDown */
+
+.shipTypes {
+    display: none;
+    position: absolute;
+    right: inherit;
+}
+
+/* Final Totals Section */
+#allCosts h3,
+#allCosts p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #65a38a;
+}
+
+/* Cart Image */
+#cartOrder {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    display: none;
+}
+
+
+.form-control {
+    width: 100%;
+    row-gap: 2em;
+}

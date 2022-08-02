@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="../images/-1_orig.jpg">
+</head>
+
+
+<body id="cartPage">
+    <!-- Header:-->
+    <div id="headerSec" class=" row px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-3 bold">Jojo Designs</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Custom design and comfortable style</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href="./catalog.html" target="_blank" class="btn btn-secondary btn-lg px-4 me-sm-3">Shop
+                    Online</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Nav Bar -->
+    <div class="row" id="navbar">
+        <nav class="navbar navbar-expand-sm" style="Background-color:#CDC0BB">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/-1_orig.jpg" alt="logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSimple">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./about.html" target="_blank">Our History</a>
+                        <a class="nav-link" href="./team.html" target="_blank">Meet the Team</a>
+                        <a class="nav-link" href="./catalog.html" target="_blank">Catalogue</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Cart -->
+    <div id="cartSection" class="container">
+        <h1 class="display-7 mx-auto">Cart</h1>
+
+        <!--Items in Cart  -->
+        <div id="cartContDiv" class="container">
+            <!-- Item, Each Item Price, Total Cost, Vat! -->
+            <div id=cartHead class="row mx-auto">
+                <h2 id="product" class="col-3">Product</h2><br>
+                <h2 id="vat" class="col-3">Vat</h2><br>
+                <h2 id="price" class="col-3">Price</h2><br>
+            </div>
+            <div>
+                <div id="preShipping" class="row mx-auto">
+                    <div class="col-6">
+                        <h3 id="vatCol">Vat</h3>
+                        <p id="vatTot"></p>
+                    </div>
+
+                    <div class="col-6">
+                        <h3 id="subTotCol" class="col-6">Sub Total <span class="text-muted font-weight-light">(excl
+                                Shipping)</span></h3>
+                        <p id="subTot"></p>
+                    </div>
+                </div>
+
+                <div id="totalSec">
+                    <button id="clearCart" class="btn" onclick="clearCart()">Clear Cart</button>
+
+                    <h3 id="totals"></h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+
+        <!-- Coupon Form -->
+        <div id="couponDiv" class="container center-content">
+
+            <h3>COUPON CODE</h3>
+            <p>Enter Coupon Code to apply Discount</p>
+
+            <input id="coupon" placeholder="JJD15990">
+            <button id="applyCoup" class="btn">Apply</button>
+        </div>
+
+        <!-- Check out: Form -->
+        <div class="container center-content" id="checkOut">
+            <h3 class="feature">CHECKOUT</h3>
+
+
+            <!-- Form, Submit Button, Radio Options -->
+            <div class="mx-auto" id="contactForm">
+                <form class="container g-2" action="#">
+                    <label for="fname" class="form-label"><i class="fa fa-user"></i>Full Name:</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Jane Doe">
+
+                    <label for="email" class="form-label"><i class="fa fa-envelope"></i> Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="jane@myemail.com">
+                </form>
+
+            </div>
+            <br>
+            <hr>
+
+
+            <!-- Collection or Delivery form -->
+            <div class="mx-auto container" id="collectForm">
+                <h3>Shipping Details</h3>
+                <form class="row g-2" action="#">
+                    <div class="col-sm-6">
+                        <label for="collect" class="form-check-label">Collect</label>
+                        <input type="radio" class="form-check-input" id="collect" name="shipping" value="Collect"
+                            onclick="javascript:alert('You have selected to Collect you Order. Please Contact us to Arrange Appointment');">
+                        <p>Collections by Appointment <br>153 Someplace Avenue
+                            Cape Town<br><a href="#footer > ul > li:nth-child(3)">Call us </a>to arrange Collection</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="courier" class="form-check-label">Courier</label>
+                        <input type="radio" class="form-check-input" id="courier" name="shipping" 
+                            value="Courier">
+
+
+                        <!--if Courier selected - show this data  -->
+                        <!-- Courier type -->
+                        <div class="dropdown_list">  
+                            <select id="couriertype" class="shipTypes">
+                                <option id="myCourier" value=" ">Choose Courier Type</option>
+                                <option clas='courOpt' id="locker" value="locker">Locker</option>
+                                <option clas='courOpt' id="standard" value="standard">Standard</option>
+                                <option clas='courOpt' id="express" value="express">Express</option>
+                            </select>
+                        </div>  
+
+                        <label for="address" class="form-label">Shipping Address:</label>
+                        <input type="text" class="form-control address" placeholder="Line 1 eg 10 Rainbow Road">
+                        <input type="text" class="form-control address" placeholder="Line 2 eg Unit 13 Cloud Place ">
+                        <input type="text" class="form-control address" placeholder="Line 3 eg Moonlight City">
+                        <input type="text" class="form-control address" placeholder="Postal Code eg 1001">
+                    </div>
+            </div>
+            </form>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div id="finalCost" class="container">
+        <div>
+            <div id="allCosts" class="row mx-auto">
+                <h3 class="col-6">Total <span class="font-italic">incl. discounts & shipping: </span></h3>
+                <p class="col-1">R</p>
+                <p class="col-5" id="totIncl"></p>
+            </div>
+
+            <div id="submitOrder">
+                <input id="submitBtn" class="btn btn-info" type="submit" value="Submit Order">
+                <img id="cartOrder" src="../images/Green Cart Icon.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- footer area -->
+    <footer class="box" id="footer">
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg></li>
+            <li>153 Someplace Avenue</li>
+            <li>Cape Town</li>
+        </ul>
+
+        <ul>
+            <li><img src="../images/-1_orig.jpg" width="70" height="70" alt="logo"></li>
+            <li>
+                <h4>Jojo Design</h4>
+            </li>
+        </ul>
+
+        <ul>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li> @jojodesign</li>
+            <li> <a href="mailto:info@jojodesign.co.za">info@jojodesign.co.za</a></li>
+            <li> (021)555-6598</li>
+        </ul>
+    </footer>
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- <script src="../onlineCat.js"></script> -->
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>
