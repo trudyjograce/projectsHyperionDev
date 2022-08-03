@@ -53,47 +53,72 @@ Follow these steps to download:
 ## Usage
 
 The files contain the following files:
+
 **HTML** 
-* index
-* about
-* team
-* catalog/shop
-* product page (single item)
-* cart/checkout page
+<details>
+ <ul>
+  <li>index</li>
+  <li>about</li>
+  <li>team</li>
+  <li>catalog/shop</li>
+  <li>product page (single item)</li>
+  <li>cart/checkout page</li>
+ </ul>
+</details>
 
 **CSS**
-* custom css
+<details>
+ <ul>
+  <li>custom css</li>
+ </ul>
+</details>
 
 **Javascrpit**
-* onlineCat (main)
-* product page
-* cart/checkout
+<details>
+ <ul>
+  <li>onlineCat (main)</li>
+    <li>product page</li>
+    <li>cart(checkout)</li>
+ </ul>
+</details>
 
+**Images**
 The images for products are stored in the images folder. Replace these with your product images and make the necssary changes to the file names on the index, catalog and corresponding product pages. Images in the "readmeImg" file are for the purpose of this README doc.
 
-![landing page](./readmeImg/landing.jpeg?raw=true "Landing Page")
-The catalog page can be accessed from the nav bar and dedicated "shop" button in the header
+**_ Functions available in Project _**
 
-![catalog page](/readmeImg/catalog.jpeg)
+1.The catalog page can be accessed from the nav bar and dedicated "shop" button in the header
+ ![landing page](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/landing.JPG)
+
+
 The catalog has "quick add" links from each product directly to the cart, or products can be added from a dropdown menu. The "Show More" button takes you to the individual product page.
 
-![product page](/readmeImg/productPage.jpeg)
+![catalog page](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/catalog.JPG)
+
 The product page contains additional product information and an "Add to Cart" button
 
-![totals updated alert](/readmeImg/totalUpdate.jpeg)
+![product page](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/productPage.JPG)
+
 Each time an item is added to the cart, an alert will populate with the new cart total
 
-![cart page](/readmeImg/cartItems.jpeg)
+![totals updated alert](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/totalUpdate.JPG)
+
 One you navigate to the cart, the items added will display with the vat and a subtotal
 
-![coupon section](/readmeImg/couponAdded.jpeg)
+![cart page](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/cartItems.JPG )
+
 The coupon value can be amended or set to '0' . If active, an alert will advise of the discount amount and the final total will amend to reflect the new value
 
-![shipping section](/readmeImg/shipping.jpeg)
+![coupon section](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/couponAdded.JPG)
+
 The shipping section will only populate if "Courier" is selected. The shipping method will update the final total. 
 
-![sucess alert](/readmeImg/sucessGenerate.jpeg)
+![shipping section](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/shipping.JPG)
+
 The submit button will generate an alert with a "Sucess" message and Invoice Number
+
+![sucess alert](https://github.com/trudyjograce/projectsHyperionDev/blob/master/readmeImg/sucessGenerate.JPG)
+
 
 ## Credits
 This prject includes resources from the following sources
