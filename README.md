@@ -71,7 +71,7 @@ The files contain the following files:
 
 The images for products are stored in the images folder. Replace these with your product images and make the necssary changes to the file names on the index, catalog and corresponding product pages. Images in the "readmeImg" file are for the purpose of this README doc.
 
-![landing page](/readmeImg/landing.jpeg)
+![landing page](./readmeImg/landing.jpeg?raw=true "Landing Page")
 The catalog page can be accessed from the nav bar and dedicated "shop" button in the header
 
 ![catalog page](/readmeImg/catalog.jpeg)
